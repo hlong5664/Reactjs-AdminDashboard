@@ -62,7 +62,7 @@ export const Users = () => {
           <h1>Users</h1>
           <button onClick={() => setOpen(true)}>Add New User</button>
         </div>
-        <DataTable slug="user" columns={columns} rows={userRows} />
+        <DataTable slug="users" columns={columns} rows={userRows} />
         {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
       </div>
     </>
