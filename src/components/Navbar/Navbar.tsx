@@ -9,9 +9,9 @@ export const Navbar = () => {
           <span>ReactAdmin</span>
         </div>
         <div className="icons">
-          <img src="/search.svg" alt="" className="icons" />
-          <img src="/app.svg" alt="" className="icons" />
-          <img src="/expand.svg" alt="" className="icons" />
+          <img src="/search.svg" alt="" className="icon" />
+          <img src="/app.svg" alt="" className="icon" />
+          <img src="/expand.svg" alt="" className="icon" />
           <div className="notification">
             <img src="/notifications.svg" alt="" />
             <span>1</span>
@@ -21,9 +21,9 @@ export const Navbar = () => {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXIrqiW3R5OstWAjkuFvNwvjYHRaTmwEQWg&s"
               alt=""
             />
-            <span>Long</span>
+            <span>Admin</span>
           </div>
-          <img src="/setting.svg" alt="" className="icons" />
+          <img src="/setting.svg" alt="" className="icon" />
         </div>
       </div>
     </>

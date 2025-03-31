@@ -16,7 +16,7 @@ export const TopBox = () => {
                   <span className="userEmail">{user.email}</span>
                 </div>
               </div>
-              <span className="amount">{user.amount} VND</span>
+              <span className="amount">${user.amount}</span>
             </div>
           ))}
         </div>

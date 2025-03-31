@@ -5,7 +5,7 @@ export const Footer = () => {
     <>
       <div className="footer">
         <span>React Admin</span>
-        <span>© Long Dev React Admin Dashboard</span>
+        <span>© Dev React Admin Dashboard</span>
       </div>
     </>
   );
