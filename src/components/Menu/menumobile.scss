@@ -8,11 +8,23 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.724);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 999;
+
+    animation: $modal-entrance;
+
+    &.closing {
+        animation: $modal-exit;
+    }
+    .modal {
+        padding: 50px;
+        background-color: $soft-bg;
+        position: relative;
+        animation: none !important;
+    }
 
     @include sm {
         display: block;
@@ -25,8 +37,8 @@
 
         .close {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 5%;
+            right: 10%;
             cursor: pointer;
         }
 

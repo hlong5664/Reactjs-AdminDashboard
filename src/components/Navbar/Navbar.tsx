@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./navbar.scss";
 import { MenuMobile } from "../Menu/MenuMobile";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,9 @@ export const Navbar = () => {
 
         <div className="logo">
           <img src="logo.svg" alt="" />
-          <span>ReactAdmin</span>
+          <Link to={"/"}>
+            <span>ReactAdmin</span>
+          </Link>
         </div>
         <div className="icons">
           <img src="/search.svg" alt="" className="icon" />

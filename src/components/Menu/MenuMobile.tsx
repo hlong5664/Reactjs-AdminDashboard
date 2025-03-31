@@ -1,15 +1,28 @@
 import { Link } from "react-router-dom";
 import "./menumobile.scss";
 import { menu } from "../../data.ts";
+import { useState } from "react";
 
 export const MenuMobile = (props: any) => {
   const { setOpen } = props;
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setOpen(false);
+      setIsClosing(false);
+    }, 300);
+  };
 
   return (
     <>
-      <div className="menuMobile" onClick={() => setOpen(false)}>
+      <div
+        className={`menuMobile ${isClosing ? "closing" : ""}`}
+        onClick={handleClose}
+      >
         <div className="modal" onClick={(e) => e.stopPropagation()}>
-          <span className="close" onClick={() => setOpen(false)}>
+          <span className="close" onClick={handleClose}>
             X
           </span>
 
