@@ -1,9 +1,17 @@
+import { useState } from "react";
 import "./navbar.scss";
+import { MenuMobile } from "../Menu/MenuMobile";
 
 export const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="navbar">
+        <div className="menu" onClick={() => setOpen(true)}>
+          <img src="menu.svg" alt="" />
+        </div>
+        {open && <MenuMobile setOpen={setOpen} />}
+
         <div className="logo">
           <img src="logo.svg" alt="" />
           <span>ReactAdmin</span>

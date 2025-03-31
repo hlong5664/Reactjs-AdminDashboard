@@ -1,6 +1,6 @@
 import { Single } from "../../components/Single/Single";
 import { singleProduct } from "../../data";
-import "./products.scss";
+import "./product.scss";
 
 export const Product = () => {
   //Fetch data and send to Single Component

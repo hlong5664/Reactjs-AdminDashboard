@@ -29,9 +29,16 @@ a {
     @include lg {
         width: max-content;
     }
+
+    @include sm {
+        display: none;
+    }
 }
 
 .contentContainer {
     padding: 5px 20px;
     width: 100%;
+    @include sm {
+        padding: 10px;
+    }
 }
